@@ -30,6 +30,7 @@ namespace WpfApp3
             var responce = client.DownloadString("http://123.0.0.1:63450/api/hotels");
             CurrentHotels = JsonConvert.DeserializeObject<List<Hotel>>(responce);
             DataContext = this;
+            //new comment
         }
     }
 }
